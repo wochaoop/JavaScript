@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prompt Example</title>
+</head>
+<body>
+
+<script>
+function getUserInputAndAlert() {
+    // 使用prompt方法显示一个对话框，等待用户输入
+    var userInput = prompt("请输入内容:");
+    
+    // 如果用户点击了确定按钮并且输入不为空，则弹出输入的内容
+    if(userInput !== null && userInput.trim() !== "") {
+        alert("您输入的内容是: " + userInput);
+    } else {
+        alert("请输入内容！");
+    }
+}
+</script>
+
+<button onclick="getUserInputAndAlert()">点击这里输入内容</button>
+
+</body>
+</html>
